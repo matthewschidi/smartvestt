@@ -174,7 +174,7 @@ export default function InvestmentPlansPage() {
             Sophisticated Investment Strategies. Intelligent Technology. Exceptional Client Experience.
           </p>
           <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-            SmartVest InvestAI is a fictional demo platform showcasing a carefully structured range of illustrative investment "solutions." Every bot, tier, and price on this page is fictional and built for design/development demonstration only.
+            SmartVest InvestAI is a fictional demo platform showcasing a carefully structured range of illustrative investment solutions. Every bot, tier, and price on this page is fictional and built for design/development demonstration only.
           </p>
         </div>
 
