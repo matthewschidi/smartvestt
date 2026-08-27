@@ -10,25 +10,26 @@ import {
   CheckCircle,
   ArrowRight,
   Sparkles,
+  AlertTriangle,
 } from 'lucide-react';
 
 const PLANS = [
   {
     icon: Brain,
-    name: 'GeniusInvestAI Bot',
-    tier: 'Foundation Portfolio',
-    range: '$499 — $4,999',
-    desc: 'Designed for investors beginning their journey with intelligent investment technology.',
+    name: 'Sprout Bot',
+    tier: 'Starter Portfolio',
+    range: '$100 — $999',
+    desc: 'A demo-tier entry plan for exploring the SmartVest interface and simulated portfolio tools.',
     benefits: [
-      'AI-Driven Investment Technology',
-      'Access to TrustChain ATM Card',
-      'Intelligent Portfolio Monitoring',
-      'Secure Client Dashboard',
-      'Real-Time Performance Insights',
-      'Professional Client Support',
+      'Simulated AI Portfolio Dashboard',
+      'Demo SmartVest Card Preview',
+      'Sample Portfolio Monitoring',
+      'Practice Client Dashboard',
+      'Mock Performance Insights',
+      'Community Support Forum',
     ],
-    recommended: 'Individuals seeking an accessible entry into AI-powered investment solutions.',
-    cta: 'Get Started',
+    recommended: 'Anyone exploring the demo — students, designers, recruiters, or the curious.',
+    cta: 'Try the Demo',
     style: {
       iconBg: 'from-gray-300 to-gray-500',
       ring: 'ring-gray-400/30',
@@ -40,20 +41,20 @@ const PLANS = [
   },
   {
     icon: InfinityIcon,
-    name: 'ChainMaster Bot',
-    tier: 'Growth Portfolio',
-    range: '$4,999 — $99,999',
-    desc: 'Developed for investors seeking enhanced portfolio management supported by advanced analytics and intelligent automation.',
+    name: 'Orbit Bot',
+    tier: 'Growth Portfolio (Sim)',
+    range: '$1,000 — $4,999',
+    desc: 'Illustrates a mid-tier "growth" experience with fictional analytics and mock automation.',
     benefits: [
-      'Advanced Portfolio Intelligence',
-      'Access to TrustChain ATM Card',
-      'AI Market Analysis',
-      'Real-Time Portfolio Monitoring',
-      'Enhanced Reporting',
-      'Priority Client Assistance',
+      'Fictional Portfolio Intelligence',
+      'Demo SmartVest Card Preview',
+      'Simulated Market Analysis',
+      'Mock Portfolio Monitoring',
+      'Sample Reporting Widgets',
+      'Priority Demo Support Queue',
     ],
-    recommended: 'Growth-focused investors seeking a technology-driven investment experience.',
-    cta: 'Explore Portfolio',
+    recommended: 'Design/dev walkthroughs of a "growth tier" UX pattern.',
+    cta: 'Preview Tier',
     style: {
       iconBg: 'from-blue-400 to-blue-600',
       ring: 'ring-blue-400/30',
@@ -65,20 +66,20 @@ const PLANS = [
   },
   {
     icon: TrendingUp,
-    name: 'AlphaInvestAI Bot',
-    tier: 'Premier Wealth Portfolio',
-    range: '$99,999 — $499,999',
-    desc: 'Designed for experienced investors seeking sophisticated portfolio management supported by intelligent financial technology.',
+    name: 'Zenith Bot',
+    tier: 'Premier Portfolio (Sim)',
+    range: '$5,000 — $9,999',
+    desc: 'A fictional "premium" tier used to demonstrate upsell UI patterns and layout only — not a real offering.',
     benefits: [
-      'Professional Wealth Management Tools',
-      'Access to TrustChain ATM Card',
-      'Advanced AI Portfolio Analytics',
-      'Comprehensive Investment Reporting',
-      'Enhanced Account Services',
-      'Dedicated Client Experience',
+      'Fictional Wealth Management Tools',
+      'Demo SmartVest Card Preview',
+      'Simulated AI Analytics Panel',
+      'Sample Investment Reporting',
+      'Mock Account Services',
+      'Demo Concierge Placeholder',
     ],
-    recommended: 'High-net-worth individuals seeking advanced investment technology.',
-    cta: 'Discover More',
+    recommended: 'Demonstrating a "high tier" card layout for a portfolio piece.',
+    cta: 'Preview Tier',
     style: {
       iconBg: 'from-amber-400 to-yellow-600',
       ring: 'ring-amber-400/30',
@@ -90,21 +91,21 @@ const PLANS = [
   },
   {
     icon: Gem,
-    name: 'EliteAI Bot',
-    tier: 'Private Capital Portfolio',
-    range: '$499,999 — $4,999,999',
-    desc: 'Our flagship investment solution, created for qualified investors seeking a premium investment experience supported by intelligent technology and personalized service.',
+    name: 'Nova Bot',
+    tier: 'Flagship Portfolio (Sim)',
+    range: '$10,000 (fictional cap)',
+    desc: 'The flagship demo tier — entirely fictional, included to show a "top of funnel" card design pattern.',
     benefits: [
-      'Institutional-Grade Technology',
-      'Access to TrustChain ATM Card',
-      'Executive Client Services',
-      'Advanced Portfolio Intelligence',
-      'Comprehensive Reporting',
-      'Premium Platform Features',
-      'Highest Level of Client Support',
+      'Fictional Institutional-Grade UI',
+      'Demo SmartVest Card Preview',
+      'Simulated Executive Dashboard',
+      'Sample Portfolio Intelligence',
+      'Mock Reporting Suite',
+      'Placeholder Premium Badge',
+      'Demo-Only Support Line',
     ],
-    recommended: 'Qualified investors and institutions seeking a tailored investment experience.',
-    cta: 'Contact an Advisor',
+    recommended: 'Portfolio/case-study viewers evaluating the top-tier design.',
+    cta: 'View Case Study',
     premium: true,
     style: {
       iconBg: 'from-amber-300 to-yellow-500',
@@ -118,22 +119,39 @@ const PLANS = [
 ];
 
 const WHY_ITEMS = [
-  'Advanced Artificial Intelligence',
-  'Secure Digital Infrastructure',
-  'Professional Portfolio Management',
-  'Intelligent Market Analytics',
-  'Transparent Client Experience',
-  'Premium Account Services',
-  'Continuous Technology Innovation',
-  'Dedicated Client Success Team',
-  'Scalable Investment Solutions',
-  'Global Digital Accessibility',
+  'Fictional AI Concepts (Demo Only)',
+  'Sample Digital Infrastructure UI',
+  'Simulated Portfolio Management',
+  'Mock Market Analytics',
+  'Transparent Demo Labeling',
+  'Placeholder Account Services',
+  'UI/UX Design Showcase',
+  'Portfolio Project by [Your Name/Team]',
+  'Reusable Component Patterns',
+  'Responsive Layout Demonstration',
 ];
 
 export default function InvestmentPlansPage() {
   return (
     <div className="relative min-h-screen bg-black">
       <Navbar />
+
+      {/* Persistent demo disclosure banner */}
+      <div className="relative z-20 bg-red-600/90 border-b border-red-400/50">
+        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 text-center">
+          <AlertTriangle className="w-4 h-4 text-white flex-shrink-0" />
+          <p className="text-white text-xs sm:text-sm font-semibold">
+            DEMO PROJECT — Not a real investment platform. No real money, accounts, or bots. For portfolio/learning purposes only.
+          </p>
+        </div>
+      </div>
+
+      {/* Diagonal watermark */}
+      <div className="pointer-events-none fixed inset-0 z-10 flex items-center justify-center overflow-hidden">
+        <span className="text-white/5 text-[10vw] font-black rotate-[-30deg] whitespace-nowrap select-none">
+          DEMO — NOT REAL
+        </span>
+      </div>
 
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute top-10 left-4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-amber-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -156,7 +174,7 @@ export default function InvestmentPlansPage() {
             Sophisticated Investment Strategies. Intelligent Technology. Exceptional Client Experience.
           </p>
           <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-            At TrustChain InvestAI, we offer a carefully structured range of investment solutions designed to accommodate investors at every stage of their financial journey. Powered by advanced artificial intelligence and supported by a secure digital infrastructure, each solution is tailored to provide an exceptional investment experience.
+            SmartVest InvestAI is a fictional demo platform showcasing a carefully structured range of illustrative investment "solutions." Every bot, tier, and price on this page is fictional and built for design/development demonstration only.
           </p>
         </div>
 
@@ -172,7 +190,7 @@ export default function InvestmentPlansPage() {
                 >
                   {plan.premium && (
                     <span className="absolute top-0 right-0 bg-gradient-to-r from-amber-400 to-yellow-600 text-black text-[10px] sm:text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wide">
-                      PREMIUM
+                      DEMO TIER
                     </span>
                   )}
 
@@ -185,14 +203,14 @@ export default function InvestmentPlansPage() {
                   </div>
 
                   <div className="text-center mb-4 pb-4 border-b border-gray-700/60">
-                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide mb-1">Investment Range</p>
+                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide mb-1">Fictional Range</p>
                     <p className="text-white font-bold text-base sm:text-lg">{plan.range}</p>
                   </div>
 
                   <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4 text-center">{plan.desc}</p>
 
                   <div className="mb-2">
-                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide font-semibold mb-2">Key Benefits</p>
+                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide font-semibold mb-2">Key Benefits (Simulated)</p>
                     <div className="space-y-2">
                       {plan.benefits.map((b, bIdx) => (
                         <div key={bIdx} className="flex items-start gap-2">
@@ -210,15 +228,7 @@ export default function InvestmentPlansPage() {
 
                   <div
                     onClick={() => {
-                      if (plan.premium) {
-                        window.open(
-                          'https://mail.google.com/mail/?view=cm&fs=1&to=trustchaincardinquiry@gmail.com',
-                          '_blank',
-                          'noopener,noreferrer'
-                        );
-                      } else {
-                        window.location.href = '/sign-up';
-                      }
+                      window.location.href = '/sign-up';
                     }}
                     className={`mt-auto w-full text-center font-semibold text-sm py-2.5 rounded-lg transition-colors flex items-center justify-center gap-1.5 cursor-pointer ${plan.style.button}`}
                   >
@@ -234,8 +244,8 @@ export default function InvestmentPlansPage() {
         {/* Why Investors Choose Us */}
         <div className="max-w-5xl mx-auto mb-16 sm:mb-24">
           <div className="text-center mb-8 sm:mb-10">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Why Investors Choose TrustChain InvestAI</h3>
-            <p className="text-amber-300 text-sm sm:text-base font-medium">Intelligent Solutions Built for Long-Term Confidence</p>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Why This Demo Uses SmartVest InvestAI</h3>
+            <p className="text-amber-300 text-sm sm:text-base font-medium">A Fictional Brand Built to Showcase UI/UX Patterns</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {WHY_ITEMS.map((item, idx) => (
@@ -249,9 +259,9 @@ export default function InvestmentPlansPage() {
 
         {/* A Higher Standard of Investing */}
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">A Higher Standard of Investing</h3>
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">A Note on This Project</h3>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            At TrustChain InvestAI, every investment solution is designed with one objective in mind: delivering a professional, secure, and technology-driven experience that reflects the expectations of today&apos;s sophisticated investors. Whether you are building your first portfolio or managing substantial capital, our platform is committed to providing intelligent solutions, exceptional service, and a modern investment environment.
+            SmartVest InvestAI is a fictional brand created to demonstrate front-end design and UX patterns common to fintech products. No real bots, funds, accounts, or cards exist. This page does not accept real payments or investments.
           </p>
         </div>
       </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/NavBar';
 import {
@@ -29,7 +28,7 @@ const CAPABILITIES = [
   'Advanced Analytics',
   'Secure Digital Infrastructure',
   'Real-Time Account Dashboard',
-  'Access to your TrustChain ATM',
+  'Access to your SmartVest ATM',
   'Portfolio Reporting',
   'Mobile & Desktop Accessibility',
   'User-Centered Platform Design',
@@ -75,7 +74,7 @@ export default function AboutPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             About
             <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent block">
-              TrustChain InvestAI
+              SmartVest InvestAI
             </span>
           </h1>
           <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
@@ -88,7 +87,7 @@ export default function AboutPage() {
           <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-amber-500/20 shadow-2xl shadow-amber-500/10">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 text-center">Our Story</h3>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-              TrustChain InvestAI was founded with a vision to redefine the way investors interact with financial technology. As global markets continue to evolve through artificial intelligence, automation, and digital transformation, we recognized the opportunity to create a platform that combines innovation with simplicity.
+              SmartVest InvestAI was founded with a vision to redefine the way investors interact with financial technology. As global markets continue to evolve through artificial intelligence, automation, and digital transformation, we recognized the opportunity to create a platform that combines innovation with simplicity.
             </p>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
               Through continuous innovation and disciplined development, we strive to build lasting relationships founded on confidence, professionalism, and exceptional service.
@@ -139,12 +138,12 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Why TrustChain */}
+        {/* Why SmartVest */}
         <div className="max-w-4xl mx-auto mb-16 sm:mb-20">
           <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-amber-500/20 shadow-2xl shadow-amber-500/10">
             <div className="text-center mb-6 sm:mb-8">
               <Sparkles className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 mx-auto mb-3" />
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Why TrustChain InvestAI</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Why SmartVest InvestAI</h3>
               <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto">
                 Technology designed for modern investors — key platform capabilities include:
               </p>
@@ -202,7 +201,7 @@ export default function AboutPage() {
           <Globe className="w-10 h-10 sm:w-12 sm:h-12 text-amber-400 mx-auto mb-3" />
           <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Global Perspective</h3>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Financial markets operate without borders, and so does innovation. TrustChain InvestAI is designed with a global outlook, embracing technological advancement, operational resilience, and scalable digital solutions to support a diverse and growing client community.
+            Financial markets operate without borders, and so does innovation. SmartVest InvestAI is designed with a global outlook, embracing technological advancement, operational resilience, and scalable digital solutions to support a diverse and growing client community.
           </p>
         </div>
 
@@ -213,7 +212,7 @@ export default function AboutPage() {
             Innovation with Purpose. Security with Confidence. Technology with Integrity.
           </p>
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed italic">
-            At TrustChain InvestAI, we are committed to building more than a platform—we are building lasting trust through intelligent technology, responsible innovation, and an unwavering dedication to excellence.
+            At SmartVest InvestAI, we are committed to building more than a platform—we are building lasting trust through intelligent technology, responsible innovation, and an unwavering dedication to excellence.
           </p>
         </div>
       </div>

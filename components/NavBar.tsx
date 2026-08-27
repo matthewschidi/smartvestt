@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'About Us', href: '/about' },
   { label: 'Investment Plans', href: '/investment-plans' },
   { label: 'How It Works', href: '/how-it-works' },
-  { label: 'TrustCard', href: '/trustcard' },
+  { label: 'Smartcard', href: '/trustcard' },
   { label: 'Security', href: '/security' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contact Us', href: '/contact' },
@@ -28,7 +28,7 @@ export default function Navbar() {
               <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
             </div>
             <div className="leading-none">
-              <span className="text-white font-bold text-base sm:text-lg block">TrustChain</span>
+              <span className="text-white font-bold text-base sm:text-lg block">Smartvest</span>
               <span className="text-amber-400 text-[10px] sm:text-xs font-medium tracking-wide">InvestAI</span>
             </div>
           </Link>
