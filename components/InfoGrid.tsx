@@ -4,7 +4,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react';
 
 const SECTIONS = [
   {
-    title: 'About TrustChain InvestAI',
+    title: 'About SmartvestAI',
     desc: 'We are a next-generation investment platform leveraging the power of artificial intelligence, blockchain technology, and real-world assets to deliver stable, predictable, and sustainable returns for investors worldwide.',
     points: [
       'AI-driven investment strategies',
@@ -44,7 +44,7 @@ const SECTIONS = [
     items: [
       { title: 'Advanced AI Trading Technology', desc: 'Maximize returns with AI-powered systems.' },
       { title: 'Full Transparency', desc: 'Real-time tracking and clear reporting.' },
-      { title: 'TrustCard Access', desc: 'Spend your earnings anywhere, anytime.' },
+      { title: 'SmartCard Access', desc: 'Spend your earnings anywhere, anytime.' },
       { title: '24/7 Customer Support', desc: 'Our team is always here to help you.' },
     ],
     linkLabel: 'More Benefits',

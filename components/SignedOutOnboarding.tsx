@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Script from 'next/script';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
@@ -165,24 +164,6 @@ export default function TrustChainLanding() {
     <div className="relative min-h-screen bg-black">
       <Navbar />
 
-      <Script
-        id="smartsupp-chat"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            var _smartsupp = _smartsupp || {};
-            _smartsupp.key = 'bc2353ae9bf12c5f80748245026c8f47818a0af4';
-            window.smartsupp = function(d) {
-              var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-              s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-              c.type='text/javascript';c.charset='utf-8';c.async=true;
-              c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-            };
-            window.smartsupp(document);
-          `
-        }}
-      />
-
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-10 left-4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-amber-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -222,7 +203,7 @@ export default function TrustChainLanding() {
               </h2>
 
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-                TrustChain InvestAI is an innovative investment platform that combines AI-powered strategies, blockchain security, and real-world assets to help you grow your wealth consistently and securely.
+                Smartvest AI is an innovative investment platform that combines AI-powered strategies, blockchain security, and real-world assets to help you grow your wealth consistently and securely.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center lg:items-start gap-3 sm:gap-4 mb-10 justify-center lg:justify-start">
@@ -463,30 +444,6 @@ export default function TrustChainLanding() {
           </div>
         </div>
 
-      {/* Tutorial Videos */}
-        <div id="how-it-works" className="max-w-4xl mx-auto mb-12 sm:mb-16">
-          <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-amber-500/20 shadow-2xl shadow-amber-500/10">
-            <div className="text-center mb-6 sm:mb-8">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-amber-500 to-yellow-700 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-amber-500/50">
-                <Play className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">Watch Our Tutorial</h3>
-              <p className="text-gray-300 text-sm sm:text-base lg:text-lg">Learn how to maximize your AI investment strategy</p>
-            </div>
-            <div className="space-y-6">
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-black border border-amber-500/20">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/0mGhVUIU2b0?controls=1&modestbranding=1&rel=0"
-                  title="Tutorial Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Trust Indicators */}
         <div id="security" className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
@@ -507,12 +464,6 @@ export default function TrustChainLanding() {
 
       <SecurityBar />
       </div>
-
-      <noscript>
-        <div style={{position: 'fixed', bottom: '20px', right: '20px', zIndex: 9999}}>
-          Powered by <a href="https://www.smartsupp.com" target="_blank" rel="noopener noreferrer">Smartsupp</a>
-        </div>
-      </noscript>
     </div>
   );
 }
