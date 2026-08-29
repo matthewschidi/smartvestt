@@ -16,20 +16,20 @@ import {
 const PLANS = [
   {
     icon: Brain,
-    name: 'Sprout Bot',
-    tier: 'Starter Portfolio',
+    name: 'Quantum Surge',
+    tier: 'Foundation Portfolio',
     range: '$100 — $999',
-    desc: 'A demo-tier entry plan for exploring the SmartVest interface and simulated portfolio tools.',
+    desc: 'Designed for investors beginning their journey with intelligent investment technology.',
     benefits: [
-      'Simulated AI Portfolio Dashboard',
-      'Demo SmartVest Card Preview',
-      'Sample Portfolio Monitoring',
-      'Practice Client Dashboard',
-      'Mock Performance Insights',
-      'Community Support Forum',
+      'AI-Driven Investment Technology',
+      'Access to TrustChain ATM Card',
+      'Intelligent Portfolio Monitoring',
+      'Secure Client Dashboard',
+      'Real-Time Performance Insights',
+      'Professional Client Support',
     ],
-    recommended: 'Anyone exploring the demo — students, designers, recruiters, or the curious.',
-    cta: 'Try the Demo',
+    recommended: 'Individuals seeking an accessible entry into AI-powered investment solutions.',
+    cta: 'Get Started',
     style: {
       iconBg: 'from-gray-300 to-gray-500',
       ring: 'ring-gray-400/30',
@@ -41,20 +41,20 @@ const PLANS = [
   },
   {
     icon: InfinityIcon,
-    name: 'Orbit Bot',
-    tier: 'Growth Portfolio (Sim)',
-    range: '$1,000 — $4,999',
-    desc: 'Illustrates a mid-tier "growth" experience with fictional analytics and mock automation.',
+    name: 'Titan Pro',
+    tier: 'Growth Portfolio',
+    range: '$20,000 — $49,999',
+    desc: 'Developed for investors seeking enhanced portfolio management supported by advanced analytics and intelligent automation.',
     benefits: [
-      'Fictional Portfolio Intelligence',
-      'Demo SmartVest Card Preview',
-      'Simulated Market Analysis',
-      'Mock Portfolio Monitoring',
-      'Sample Reporting Widgets',
-      'Priority Demo Support Queue',
+      'Advanced Portfolio Intelligence',
+      'Access to TrustChain ATM Card',
+      'AI Market Analysis',
+      'Real-Time Portfolio Monitoring',
+      'Enhanced Reporting',
+      'Priority Client Assistance',
     ],
-    recommended: 'Design/dev walkthroughs of a "growth tier" UX pattern.',
-    cta: 'Preview Tier',
+    recommended: 'Growth-focused investors seeking a technology-driven investment experience.',
+    cta: 'Explore Portfolio',
     style: {
       iconBg: 'from-blue-400 to-blue-600',
       ring: 'ring-blue-400/30',
@@ -66,20 +66,20 @@ const PLANS = [
   },
   {
     icon: TrendingUp,
-    name: 'Zenith Bot',
-    tier: 'Premier Portfolio (Sim)',
-    range: '$5,000 — $9,999',
-    desc: 'A fictional "premium" tier used to demonstrate upsell UI patterns and layout only — not a real offering.',
+    name: 'Nexus Trader',
+    tier: 'Premier Wealth Portfolio',
+    range: '$1000 — $4,999',
+    desc: 'Designed for experienced investors seeking sophisticated portfolio management supported by intelligent financial technology.',
     benefits: [
-      'Fictional Wealth Management Tools',
-      'Demo SmartVest Card Preview',
-      'Simulated AI Analytics Panel',
-      'Sample Investment Reporting',
-      'Mock Account Services',
-      'Demo Concierge Placeholder',
+      'Professional Wealth Management Tools',
+      'Access to TrustChain ATM Card',
+      'Advanced AI Portfolio Analytics',
+      'Comprehensive Investment Reporting',
+      'Enhanced Account Services',
+      'Dedicated Client Experience',
     ],
-    recommended: 'Demonstrating a "high tier" card layout for a portfolio piece.',
-    cta: 'Preview Tier',
+    recommended: 'High-net-worth individuals seeking advanced investment technology.',
+    cta: 'Discover More',
     style: {
       iconBg: 'from-amber-400 to-yellow-600',
       ring: 'ring-amber-400/30',
@@ -91,21 +91,21 @@ const PLANS = [
   },
   {
     icon: Gem,
-    name: 'Nova Bot',
-    tier: 'Flagship Portfolio (Sim)',
-    range: '$10,000 (fictional cap)',
-    desc: 'The flagship demo tier — entirely fictional, included to show a "top of funnel" card design pattern.',
+    name: 'Infinity Master',
+    tier: 'Private Capital Portfolio',
+    range: '$50,000 — $100,999',
+    desc: 'Our flagship investment solution, created for qualified investors seeking a premium investment experience supported by intelligent technology and personalized service.',
     benefits: [
-      'Fictional Institutional-Grade UI',
-      'Demo SmartVest Card Preview',
-      'Simulated Executive Dashboard',
-      'Sample Portfolio Intelligence',
-      'Mock Reporting Suite',
-      'Placeholder Premium Badge',
-      'Demo-Only Support Line',
+      'Institutional-Grade Technology',
+      'Access to TrustChain ATM Card',
+      'Executive Client Services',
+      'Advanced Portfolio Intelligence',
+      'Comprehensive Reporting',
+      'Premium Platform Features',
+      'Highest Level of Client Support',
     ],
-    recommended: 'Portfolio/case-study viewers evaluating the top-tier design.',
-    cta: 'View Case Study',
+    recommended: 'Qualified investors and institutions seeking a tailored investment experience.',
+    cta: 'Contact an Advisor',
     premium: true,
     style: {
       iconBg: 'from-amber-300 to-yellow-500',
@@ -119,63 +119,46 @@ const PLANS = [
 ];
 
 const WHY_ITEMS = [
-  'Fictional AI Concepts (Demo Only)',
-  'Sample Digital Infrastructure UI',
-  'Simulated Portfolio Management',
-  'Mock Market Analytics',
-  'Transparent Demo Labeling',
-  'Placeholder Account Services',
-  'UI/UX Design Showcase',
-  'Portfolio Project by [Your Name/Team]',
-  'Reusable Component Patterns',
-  'Responsive Layout Demonstration',
+  'Advanced Artificial Intelligence',
+  'Secure Digital Infrastructure',
+  'Professional Portfolio Management',
+  'Intelligent Market Analytics',
+  'Transparent Client Experience',
+  'Premium Account Services',
+  'Continuous Technology Innovation',
+  'Dedicated Client Success Team',
+  'Scalable Investment Solutions',
+  'Global Digital Accessibility',
 ];
+
 
 export default function InvestmentPlansPage() {
   return (
     <div className="relative min-h-screen bg-black">
       <Navbar />
-
-      {/* Persistent demo disclosure banner */}
-      <div className="relative z-20 bg-red-600/90 border-b border-red-400/50">
-        <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 text-center">
-          <AlertTriangle className="w-4 h-4 text-white flex-shrink-0" />
-          <p className="text-white text-xs sm:text-sm font-semibold">
-            DEMO PROJECT — Not a real investment platform. No real money, accounts, or bots. For portfolio/learning purposes only.
-          </p>
-        </div>
-      </div>
-
-      {/* Diagonal watermark */}
-      <div className="pointer-events-none fixed inset-0 z-10 flex items-center justify-center overflow-hidden">
-        <span className="text-white/5 text-[10vw] font-black rotate-[-30deg] whitespace-nowrap select-none">
-          DEMO — NOT REAL
-        </span>
-      </div>
-
       <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute top-10 left-4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-amber-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-8 w-28 h-28 sm:w-40 sm:h-40 lg:w-56 lg:h-56 bg-yellow-600 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute top-10 left-4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-8 w-28 h-28 sm:w-40 sm:h-40 lg:w-56 lg:h-56 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
       </div>
 
       <div className="relative z-10 px-4 py-12 sm:py-16">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-14 sm:mb-20">
-          <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-amber-400 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-amber-500/50">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-blue-500/50">
             <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-black" />
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Exclusive Investment
-            <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent block">
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent block">
               Solutions
             </span>
           </h1>
-          <p className="text-amber-300 font-medium text-sm sm:text-base mb-4">
+          <p className="text-blue-300 font-medium text-sm sm:text-base mb-4">
             Sophisticated Investment Strategies. Intelligent Technology. Exceptional Client Experience.
           </p>
           <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-            SmartVest InvestAI is a fictional demo platform showcasing a carefully structured range of illustrative investment solutions. Every bot, tier, and price on this page is fictional and built for design/development demonstration only.
-          </p>
+            At TrustChain InvestAI, we offer a carefully structured range of investment solutions designed to accommodate investors at every stage of their financial journey. Powered by advanced artificial intelligence and supported by a secure digital infrastructure, each solution is tailored to provide an exceptional investment experience.
+            </p>
         </div>
 
         {/* Plans grid */}
@@ -189,8 +172,8 @@ export default function InvestmentPlansPage() {
                   className={`relative rounded-2xl border-2 p-5 sm:p-6 flex flex-col ${plan.style.cardBg} ${plan.style.border}`}
                 >
                   {plan.premium && (
-                    <span className="absolute top-0 right-0 bg-gradient-to-r from-amber-400 to-yellow-600 text-black text-[10px] sm:text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wide">
-                      DEMO TIER
+                    <span className="absolute top-0 right-0 bg-gradient-to-r from-blue-400 to-cyan-500 text-black text-[10px] sm:text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-xl tracking-wide">
+                      Premium TIER
                     </span>
                   )}
 
@@ -202,15 +185,15 @@ export default function InvestmentPlansPage() {
                     <p className={`${plan.style.label} text-xs sm:text-sm mt-1`}>{plan.tier}</p>
                   </div>
 
-                  <div className="text-center mb-4 pb-4 border-b border-gray-700/60">
-                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide mb-1">Fictional Range</p>
+                  <div className="text-center mb-4 pb-4 border-b border-slate-700/60">
+                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide mb-1">Investment Range</p>
                     <p className="text-white font-bold text-base sm:text-lg">{plan.range}</p>
                   </div>
 
                   <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4 text-center">{plan.desc}</p>
 
                   <div className="mb-2">
-                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide font-semibold mb-2">Key Benefits (Simulated)</p>
+                    <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide font-semibold mb-2">Key Benefits</p>
                     <div className="space-y-2">
                       {plan.benefits.map((b, bIdx) => (
                         <div key={bIdx} className="flex items-start gap-2">
@@ -221,7 +204,7 @@ export default function InvestmentPlansPage() {
                     </div>
                   </div>
 
-                  <div className="mt-4 mb-5 bg-black/30 rounded-lg p-3 border border-gray-700/40">
+                  <div className="mt-4 mb-5 bg-black/30 rounded-lg p-3 border border-slate-700/40">
                     <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-wide font-semibold mb-1">Recommended For</p>
                     <p className="text-gray-300 text-xs sm:text-sm leading-snug">{plan.recommended}</p>
                   </div>
@@ -244,13 +227,13 @@ export default function InvestmentPlansPage() {
         {/* Why Investors Choose Us */}
         <div className="max-w-5xl mx-auto mb-16 sm:mb-24">
           <div className="text-center mb-8 sm:mb-10">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Why This Demo Uses SmartVest InvestAI</h3>
-            <p className="text-amber-300 text-sm sm:text-base font-medium">A Fictional Brand Built to Showcase UI/UX Patterns</p>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Why Investors Choose TrustChain InvestAI</h3>
+            <p className="text-blue-300 text-sm sm:text-base font-medium">Intelligent Solutions Built for Long-Term Confidence</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {WHY_ITEMS.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 bg-gray-900/50 backdrop-blur-lg rounded-xl border border-amber-500/20 px-4 sm:px-5 py-3 sm:py-4">
-                <span className="w-2 h-2 rounded-full bg-amber-400 flex-shrink-0"></span>
+              <div key={idx} className="flex items-center gap-3 bg-slate-900/50 backdrop-blur-lg rounded-xl border border-blue-500/20 px-4 sm:px-5 py-3 sm:py-4">
+                <span className="w-2 h-2 rounded-full bg-blue-400 flex-shrink-0"></span>
                 <span className="text-gray-200 text-sm sm:text-base">{item}</span>
               </div>
             ))}
@@ -260,8 +243,8 @@ export default function InvestmentPlansPage() {
         {/* A Higher Standard of Investing */}
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">A Note on This Project</h3>
-          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            SmartVest InvestAI is a fictional brand created to demonstrate front-end design and UX patterns common to fintech products. No real bots, funds, accounts, or cards exist. This page does not accept real payments or investments.
+         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+            At Smartvest, every investment solution is designed with one objective in mind: delivering a professional, secure, and technology-driven experience that reflects the expectations of today&apos;s sophisticated investors. Whether you are building your first portfolio or managing substantial capital, our platform is committed to providing intelligent solutions, exceptional service, and a modern investment environment.
           </p>
         </div>
       </div>
