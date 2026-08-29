@@ -54,7 +54,7 @@ const [message, setMessage] = useState('');
 
 const handleCardRequest = (e: React.FormEvent) => {
   e.preventDefault();
-  const to = 'Smartvestcardinquiry@gmail.com';
+  const to = 'smartvestaisupport@gmail.com';
   const subject = 'Smartvest Card Request';
   const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

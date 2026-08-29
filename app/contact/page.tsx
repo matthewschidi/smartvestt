@@ -13,7 +13,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const to = 'trustchaincardinquiry@gmail.com';
+    const to = 'smartvestaisupport@gmail.com';
     const finalSubject = subject || 'Inquiry from TrustChain InvestAI Website';
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
 
@@ -62,7 +62,7 @@ export default function ContactPage() {
               <a  href="mailto:trustchaincardinquiry@gmail.com"
                 className="text-blue-300 hover:text-blue-400 text-sm sm:text-base break-all transition-colors"
               >
-                smartvestsupport@gmail.com
+                smartvestaisupport@gmail.com
               </a>
             </div>
 

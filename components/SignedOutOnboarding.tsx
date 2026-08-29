@@ -8,7 +8,6 @@ import {
   TrendingUp,
   Shield,
   DollarSign,
-  Play,
   Bot,
   CheckCircle,
   Lock,
@@ -370,7 +369,7 @@ export default function TrustChainLanding() {
                           e.stopPropagation();
                           if (tier.premium) {
                             window.open(
-                              'https://mail.google.com/mail/?view=cm&fs=1&to=trustchaincardinquiry@gmail.com',
+                              'https://mail.google.com/mail/?view=cm&fs=1&to=smartvestaisupport@gmail.com',
                               '_blank',
                               'noopener,noreferrer'
                             );
