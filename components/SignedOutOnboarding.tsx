@@ -245,9 +245,31 @@ export default function TrustChainLanding() {
                   <span className="text-slate-300 text-xs sm:text-sm">Trusted Globally</span>
                 </div>
               </div>
+
+              
+            </div>
+             {/* Card Image Container */}
+            <div className="relative flex justify-center lg:justify-end">
+              {/* Ambient background glows */}
+              <div className="absolute -top-6 -right-6 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl" />
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl" />
+
+              {/* Card image wrapper */}
+              <div className="relative w-full max-w-md aspect-[1.586/1] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/30 border border-blue-500/30">
+                <Image
+                  src="/smart.jpg"
+                  alt="Smart Card"
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 448px"
+                />
+              </div>
             </div>
           </div>
         </div>
+
+          
         {/* ============ END HERO ============ */}
 
         {/* Referral Note (demo copy — not a live referral program) */}
@@ -440,7 +462,7 @@ export default function TrustChainLanding() {
               <p className="text-gray-300 text-sm sm:text-base lg:text-lg">Learn how to maximize your AI investment strategy</p>
             </div>
             <div className="space-y-6">
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-black border border-amber-500/20">
+              <div className="relative aspect-video rounded-xl overflow-hidden bg-black border border-blue-500/20">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
                   src="https://www.youtube.com/embed/0mGhVUIU2b0?controls=1&modestbranding=1&rel=0"

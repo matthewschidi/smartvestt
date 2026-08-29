@@ -57,24 +57,24 @@ export default function InfoGrid() {
     <div className="max-w-7xl mx-auto mb-12 sm:mb-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         {/* About */}
-        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-amber-500/20 p-5 sm:p-6 flex flex-col">
+        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-blue-500/20 p-5 sm:p-6 flex flex-col">
           <h4 className="text-white font-bold text-base sm:text-lg mb-3">{SECTIONS[0].title}</h4>
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">{SECTIONS[0].desc}</p>
           <div className="space-y-2 mb-5 flex-1">
             {SECTIONS[0].points!.map((p, i) => (
               <div key={i} className="flex items-start gap-2">
-                <CheckCircle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
                 <span className="text-gray-300 text-xs sm:text-sm leading-snug">{p}</span>
               </div>
             ))}
           </div>
-          <Link href={SECTIONS[0].href} className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors">
+          <Link href={SECTIONS[0].href} className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
             {SECTIONS[0].linkLabel} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
         {/* Investment Plans */}
-        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-amber-500/20 p-5 sm:p-6 flex flex-col">
+        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-blue-500/20 p-5 sm:p-6 flex flex-col">
           <h4 className="text-white font-bold text-base sm:text-lg mb-1">{SECTIONS[1].title}</h4>
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">{SECTIONS[1].desc}</p>
           <div className="space-y-3 mb-5 flex-1">
@@ -85,25 +85,25 @@ export default function InfoGrid() {
                   <p className="text-gray-500 text-[10px] sm:text-xs">{plan.min}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-amber-400 text-xs sm:text-sm font-semibold">{plan.rate}</p>
+                  <p className="text-blue-400 text-xs sm:text-sm font-semibold">{plan.rate}</p>
                   <p className="text-gray-500 text-[10px] sm:text-xs">{plan.period}</p>
                 </div>
               </div>
             ))}
           </div>
-          <Link href={SECTIONS[1].href} className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors">
+          <Link href={SECTIONS[1].href} className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
             {SECTIONS[1].linkLabel} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
         {/* How It Works */}
-        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-amber-500/20 p-5 sm:p-6 flex flex-col">
+        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-blue-500/20 p-5 sm:p-6 flex flex-col">
           <h4 className="text-white font-bold text-base sm:text-lg mb-1">{SECTIONS[2].title}</h4>
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">{SECTIONS[2].desc}</p>
           <div className="space-y-3 mb-5 flex-1">
             {SECTIONS[2].steps!.map((step, i) => (
               <div key={i} className="flex items-start gap-3">
-                <span className="w-5 h-5 rounded-full bg-gradient-to-br from-amber-400 to-yellow-600 text-black text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-400 to-yellow-600 text-black text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
                   {step.n}
                 </span>
                 <div>
@@ -113,13 +113,13 @@ export default function InfoGrid() {
               </div>
             ))}
           </div>
-          <Link href={SECTIONS[2].href} className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors">
+          <Link href={SECTIONS[2].href} className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
             {SECTIONS[2].linkLabel} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
         {/* Why Investors Choose Us */}
-        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-amber-500/20 p-5 sm:p-6 flex flex-col">
+        <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl border border-blue-500/20 p-5 sm:p-6 flex flex-col">
           <h4 className="text-white font-bold text-base sm:text-lg mb-4">{SECTIONS[3].title}</h4>
           <div className="space-y-3 mb-5 flex-1">
             {SECTIONS[3].items!.map((item, i) => (
@@ -129,7 +129,7 @@ export default function InfoGrid() {
               </div>
             ))}
           </div>
-          <Link href={SECTIONS[3].href} className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 text-sm font-medium transition-colors">
+          <Link href={SECTIONS[3].href} className="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
             {SECTIONS[3].linkLabel} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

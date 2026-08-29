@@ -13,7 +13,7 @@ const isPublicRoute = createRouteMatcher([
   '/letterT2.png',  
   '/faq',  
   '/security',       
-  '/trustcard',          
+  '/smartcard',          
   '/how-it-works',  
   '/contact', 
   '/about', 

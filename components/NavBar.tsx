@@ -2,12 +2,14 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Brain, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image'
 
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   { label: 'Investment Plans', href: '/investment-plans' },
+  { label: 'Smartcard', href: 'smartcard'},
   { label: 'How It Works', href: '/how-it-works' },
   { label: 'Security', href: '/security' },
   { label: 'FAQ', href: '/faq' },
@@ -23,8 +25,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-sky-400 to-blue-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-lg shadow-sky-500/50">
-              <Brain className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
+            <div className="rounded-full flex items-center justify-center shadow-lg shadow-sky-500/50">
+              <Image 
+               alt='logo'
+               src='/logo.png'
+               height={56}
+               width={56}
+              className="w-full h-full" />
             </div>
             <div className="leading-none">
               <span className="text-white font-bold text-base sm:text-lg block">Smartvest</span>

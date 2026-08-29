@@ -1,0 +1,217 @@
+'use client';
+import Navbar from '@/components/NavBar';
+import {
+  CreditCard,
+  Globe,
+  Landmark,
+  ShoppingBag,
+  Earth,
+  ShieldCheck,
+  LayoutDashboard,
+  Sparkles,
+  Send
+} from 'lucide-react';
+import Image from "next/image"
+import React, { useState } from 'react';
+
+const CARD_BENEFITS = [
+  {
+    icon: Globe,
+    title: 'Global Spending',
+    desc: 'Use your Smartvest Card to make purchases at millions of merchants worldwide where the supported payment network is accepted.',
+  },
+  {
+    icon: Landmark,
+    title: 'ATM Cash Access',
+    desc: 'Access available funds through compatible ATM networks across the globe, subject to your account terms and applicable limits.',
+  },
+  {
+    icon: ShoppingBag,
+    title: 'Online Payments',
+    desc: 'Make secure online purchases and payments with confidence using your Smartvest Card.',
+  },
+  {
+    icon: Earth,
+    title: 'Worldwide Acceptance',
+    desc: 'Designed for seamless use across international payment networks, giving you greater flexibility whether at home or abroad.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Secure Transactions',
+    desc: 'Benefit from modern payment security features designed to help protect your card and account during every transaction.',
+  },
+  {
+    icon: LayoutDashboard,
+    title: 'Integrated Account Experience',
+    desc: 'Manage your card activity alongside your investment account through your secure Smartvest InvestAI dashboard.',
+  },
+];
+
+export default function TrustCardPage() {
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [message, setMessage] = useState('');
+
+const handleCardRequest = (e: React.FormEvent) => {
+  e.preventDefault();
+  const to = 'Smartvestcardinquiry@gmail.com';
+  const subject = 'Smartvest Card Request';
+  const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.open(gmailUrl, '_blank');
+};
+  
+  return (
+    <div className="relative min-h-screen bg-black">
+      <Navbar />
+
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-10 left-4 w-32 h-32 sm:w-48 sm:h-48 lg:w-72 lg:h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute bottom-10 right-8 w-28 h-28 sm:w-40 sm:h-40 lg:w-56 lg:h-56 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+      </div>
+
+      <div className="relative z-10 px-4 py-12 sm:py-16">
+        {/* Header + Card visual */}
+        <div className="max-w-6xl mx-auto mb-16 sm:mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 mb-6">
+                <Sparkles className="w-3.5 h-3.5 text-blue-400" />
+                <span className="text-blue-300 text-xs sm:text-sm font-medium tracking-wide">Smartvest CARD</span>
+              </div>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+                Global Access.
+                <span className="bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent block">
+                  Premium Convenience.
+                </span>
+              </h1>
+              <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-4">
+                The Smartvest Card is designed to provide eligible clients with convenient access to their investment accounts through a secure and globally accepted payment experience.
+              </p>
+              <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+                Whether you&apos;re traveling internationally, making everyday purchases, or accessing available funds, the Smartvest Card offers flexibility wherever your financial journey takes you.
+              </p>
+            </div>
+
+                {/* Card Image Container */}
+                <div className="relative flex justify-center lg:justify-end">
+                {/* Ambient background glows */}
+                <div className="absolute -top-6 -right-6 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl" />
+                <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl" />
+
+                {/* Card image wrapper */}
+                <div className="relative w-full max-w-md aspect-[1.586/1] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/30 border border-blue-500/30">
+                    <Image
+                    src="/smart.jpg"
+                    alt="Trust Chain Card"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 448px"
+                    />
+                </div>
+                </div>
+                            
+          </div>
+        </div>
+
+        {/* Premium Card Benefits */}
+        <div className="max-w-6xl mx-auto mb-16 sm:mb-24">
+          <div className="text-center mb-8 sm:mb-10">
+            <CreditCard className="w-10 h-10 sm:w-12 sm:h-12 text-blue-400 mx-auto mb-3" />
+            <h3 className="text-2xl sm:text-3xl font-bold text-white">Premium Card Benefits</h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {CARD_BENEFITS.map((item, idx) => (
+              <div key={idx} className="bg-gray-900/50 backdrop-blur-lg rounded-2xl border border-blue-500/20 p-5 sm:p-6">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                  <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
+                </div>
+                <h4 className="text-white font-semibold text-sm sm:text-base mb-2">{item.title}</h4>
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Designed for Investors Who Expect More */}
+        <div className="max-w-3xl mx-auto mb-16 sm:mb-24 text-center">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Designed for Investors Who Expect More</h3>
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+            The Smartvest Card reflects our commitment to delivering a premium client experience by combining intelligent investment technology with convenient access to everyday financial transactions. From global travel to business payments and digital commerce, the Smartvest Card is designed to complement the lifestyle of modern investors.
+          </p>
+        </div>
+
+       {/* Request Your Card */}
+        <div className="max-w-3xl mx-auto mb-16 sm:mb-20">
+          <div className="bg-gray-900/60 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-blue-500/20 shadow-2xl shadow-blue-500/10 text-center">
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">Request Your Smartvest Card</h3>
+            <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-6 max-w-xl mx-auto">
+              Eligible clients may request a Smartvest Card by contacting our Client Services team. Our specialists will guide you through the eligibility, verification, and issuance process and provide any information required to activate your card.
+            </p>
+
+            <form onSubmit={handleCardRequest} className="max-w-md mx-auto text-left space-y-4">
+              <div>
+                <label htmlFor="card-name" className="block text-gray-300 text-sm font-medium mb-1.5">
+                  Full Name
+                </label>
+                <input
+                  id="card-name"
+                  type="text"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-full bg-black/40 border border-gray-700 focus:border-blue-500 rounded-lg px-4 py-2.5 text-white text-sm sm:text-base outline-none transition-colors"
+                  placeholder="John Smith"
+                />
+              </div>
+
+            <div>
+                <label htmlFor="card-address" className="block text-gray-300 text-sm font-medium mb-1.5">
+                  Home Address
+                </label>
+                <input
+                  id="card-address"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full bg-black/40 border border-gray-700 focus:border-blue-500 rounded-lg px-4 py-2.5 text-white text-sm sm:text-base outline-none transition-colors"
+                  placeholder="778 AdresAve Illinois USA"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="card-message" className="block text-gray-300 text-sm font-medium mb-1.5">
+                  Message
+                </label>
+                <textarea
+                  id="card-message"
+                  rows={4}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="w-full bg-black/40 border border-gray-700 focus:border-blue-500 rounded-lg px-4 py-2.5 text-white text-sm sm:text-base outline-none transition-colors resize-none"
+                  placeholder="Talk to us"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-black font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg shadow-blue-500/50 transform hover:scale-105"
+              >
+                <Send className="w-4 h-4" />
+                Contact Client Services
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Premium Tagline */}
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-blue-300 font-semibold text-base sm:text-lg tracking-wide">
+            One Platform. One Card. Global Access.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
