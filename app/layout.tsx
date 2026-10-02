@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TCI",
-  description: "Trust Chain Invest AI app",
+  title: "Smartvest",
+  description: "Smart Vest AI app",
   manifest: '/manifest.json'
 };
 
