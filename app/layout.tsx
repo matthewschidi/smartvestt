@@ -19,8 +19,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Smartvest",
   description: "Smart Vest AI app",
-  manifest: '/manifest.json'
-};
+  manifest: '/manifest.json',
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+}
 
 export default function RootLayout({
   children,
